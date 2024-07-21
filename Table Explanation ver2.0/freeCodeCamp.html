@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title id="title"></title>
+     <meta charset= 'UTF-8'>
+     <link rel="stylesheet" href="styles.css">
+  </head>
+ <body>
+    <div class="title">
+        <h1 class="h1-title">The <code>&lt;table&gt;</code> Element</h1>
+    </div>
+    <nav class="navbar" id="navbar">
+        <header class="unnesesary">Navigation</header>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="#Introduction" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="logos"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M9.4 86.6C-3.1 74.1-3.1 53.9 9.4 41.4s32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L178.7 256 9.4 86.6zM256 416H544c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/></svg><span class="link-text">Introduction</span></a></li>
+
+            <li class="nav-item"><a href="#Description" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="logos-special"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM112 256H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg><span class="link-text">Description</span></a></li>
+            
+            <li class="nav-item"><a href="#Example" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="logos"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg><span class="link-text">Example</span></a></li>
+
+            <li class="nav-item"><a href="#Uses" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="logos"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M308.5 135.3c7.1-6.3 9.9-16.2 6.2-25c-2.3-5.3-4.8-10.5-7.6-15.5L304 89.4c-3-5-6.3-9.9-9.8-14.6c-5.7-7.6-15.7-10.1-24.7-7.1l-28.2 9.3c-10.7-8.8-23-16-36.2-20.9L199 27.1c-1.9-9.3-9.1-16.7-18.5-17.8C173.9 8.4 167.2 8 160.4 8h-.7c-6.8 0-13.5 .4-20.1 1.2c-9.4 1.1-16.6 8.6-18.5 17.8L115 56.1c-13.3 5-25.5 12.1-36.2 20.9L50.5 67.8c-9-3-19-.5-24.7 7.1c-3.5 4.7-6.8 9.6-9.9 14.6l-3 5.3c-2.8 5-5.3 10.2-7.6 15.6c-3.7 8.7-.9 18.6 6.2 25l22.2 19.8C32.6 161.9 32 168.9 32 176s.6 14.1 1.7 20.9L11.5 216.7c-7.1 6.3-9.9 16.2-6.2 25c2.3 5.3 4.8 10.5 7.6 15.6l3 5.2c3 5.1 6.3 9.9 9.9 14.6c5.7 7.6 15.7 10.1 24.7 7.1l28.2-9.3c10.7 8.8 23 16 36.2 20.9l6.1 29.1c1.9 9.3 9.1 16.7 18.5 17.8c6.7 .8 13.5 1.2 20.4 1.2s13.7-.4 20.4-1.2c9.4-1.1 16.6-8.6 18.5-17.8l6.1-29.1c13.3-5 25.5-12.1 36.2-20.9l28.2 9.3c9 3 19 .5 24.7-7.1c3.5-4.7 6.8-9.5 9.8-14.6l3.1-5.4c2.8-5 5.3-10.2 7.6-15.5c3.7-8.7 .9-18.6-6.2-25l-22.2-19.8c1.1-6.8 1.7-13.8 1.7-20.9s-.6-14.1-1.7-20.9l22.2-19.8zM112 176a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zM504.7 500.5c6.3 7.1 16.2 9.9 25 6.2c5.3-2.3 10.5-4.8 15.5-7.6l5.4-3.1c5-3 9.9-6.3 14.6-9.8c7.6-5.7 10.1-15.7 7.1-24.7l-9.3-28.2c8.8-10.7 16-23 20.9-36.2l29.1-6.1c9.3-1.9 16.7-9.1 17.8-18.5c.8-6.7 1.2-13.5 1.2-20.4s-.4-13.7-1.2-20.4c-1.1-9.4-8.6-16.6-17.8-18.5L583.9 307c-5-13.3-12.1-25.5-20.9-36.2l9.3-28.2c3-9 .5-19-7.1-24.7c-4.7-3.5-9.6-6.8-14.6-9.9l-5.3-3c-5-2.8-10.2-5.3-15.6-7.6c-8.7-3.7-18.6-.9-25 6.2l-19.8 22.2c-6.8-1.1-13.8-1.7-20.9-1.7s-14.1 .6-20.9 1.7l-19.8-22.2c-6.3-7.1-16.2-9.9-25-6.2c-5.3 2.3-10.5 4.8-15.6 7.6l-5.2 3c-5.1 3-9.9 6.3-14.6 9.9c-7.6 5.7-10.1 15.7-7.1 24.7l9.3 28.2c-8.8 10.7-16 23-20.9 36.2L315.1 313c-9.3 1.9-16.7 9.1-17.8 18.5c-.8 6.7-1.2 13.5-1.2 20.4s.4 13.7 1.2 20.4c1.1 9.4 8.6 16.6 17.8 18.5l29.1 6.1c5 13.3 12.1 25.5 20.9 36.2l-9.3 28.2c-3 9-.5 19 7.1 24.7c4.7 3.5 9.5 6.8 14.6 9.8l5.4 3.1c5 2.8 10.2 5.3 15.5 7.6c8.7 3.7 18.6 .9 25-6.2l19.8-22.2c6.8 1.1 13.8 1.7 20.9 1.7s14.1-.6 20.9-1.7l19.8 22.2zM464 304a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg><span class="link-text">Uses</span></a></li>
+            
+            <li class="nav-item"><a href="#Commonly_Used_Attributes" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="logos"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M208 80c0-26.5 21.5-48 48-48h64c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48h-8v40H464c30.9 0 56 25.1 56 56v32h8c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H464c-26.5 0-48-21.5-48-48V368c0-26.5 21.5-48 48-48h8V288c0-4.4-3.6-8-8-8H312v40h8c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H256c-26.5 0-48-21.5-48-48V368c0-26.5 21.5-48 48-48h8V280H112c-4.4 0-8 3.6-8 8v32h8c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V368c0-26.5 21.5-48 48-48h8V288c0-30.9 25.1-56 56-56H264V192h-8c-26.5 0-48-21.5-48-48V80z"/></svg><span class="link-text">Commonly Used Attributes</span></a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+     <section class="main-section" id="Introduction">
+           <header>Introduction</header>
+          <p class="justify_text">Imagine a spreadsheet - rows and columns filled with information. That's precisely what the <code>&lt;table&gt;</code> element allows you to create in HTML. It establishes a container for organizing your data into a grid layout, making it visually clear and easy to navigate for users.</p>
+     </section>
+     <section class="main-section" id="Description">
+        <header>Description</header>
+        <p class="align-left">The <code>&lt;table&gt;</code> element by itself doesn't hold the actual data. It serves as a framework for other elements that define the structure:</p>
+        <ul>
+            <li><p>Rows (<code>&lt;tr&gt;</code>): These elements represent horizontal lines within the table. Each <code>&lt;tr&gt;</code> element represents a single row of data.</p></li>
+            <li><p>Cells (<code>&lt;td&gt;</code> and <code>&lt;th&gt;</code>): These elements define the individual compartments within a table. They hold the actual content you want to display. There are two main cell types:</p></li>
+            <ul>
+              <li><p>Data Cells (<code>&lt;td&gt;</code>): Used for the main content of the table. They typically display information related to the corresponding row header.</p></li>
+              <li><p>Header Cells (<code>&lt;th&gt;</code>): Used for labeling rows or columns. They are often bolded and visually distinct from regular data cells to improve readability.</p></li>
+            </ul>
+        </ul>
+      </section>
+      <section class="main-section" id="Example">
+            <header>Example</header>
+            <p>Here's a more comprehensive example of a table with headers, data cells, and proper formatting:</p>
+            <div class="example">
+              <div class="code-example">
+                <p>Code:</p>
+                <pre>
+&lt;table border="1"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Age&lt;/th&gt;
+            &lt;th&gt;City&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Alice&lt;/td&gt;
+            &lt;td&gt;30&lt;/td&gt;
+            &lt;td&gt;New York&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Bob&lt;/td&gt;
+            &lt;td&gt;25&lt;/td&gt;
+            &lt;td&gt;London&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+                </pre>
+              </div>
+              <div class="result-example">
+                <p>Result:</p>
+                <table border="1">  
+                  <thead>  
+                    <tr>
+                     <th>Name</th>
+                     <th>Age</th>
+                     <th>City</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                     <td>Alice</td>
+                     <td>30</td>
+                     <td>New York</td>
+                    </tr>
+                    <tr>
+                     <td>Bob</td>
+                     <td>25</td>
+                     <td>London</td>
+                    </tr>
+                   </tbody>
+                </table>
+              </div>
+            </div>
+      </section>
+      <section class="main-section" id="Uses">
+            <header>Uses</header>
+            <p>Tables are incredibly versatile and can be used for various functionalities on web pages:</p>
+            <ul>
+              <li>Data Presentation: The primary use case is presenting data sets in a structured and organized manner. This is ideal for financial records, product listings, comparison charts, or any information that benefits from a grid layout.</li>
+              <li>Layout Purposes: Tables can be used for basic layout structures, especially in older web design practices. You can create sections within a page using tables, although this approach is less common with the emergence of more advanced CSS techniques.</li>
+            </ul>
+      </section>
+      <section class="main-section" id="Commonly_Used_Attributes">
+            <header>Commonly Used Attributes</header>
+            <p>While the <code>&lt;table&gt;</code> element itself has a few attributes, most customization happens with the child elements (<code>&lt;tr&gt;</code> and <code>&lt;td&gt;</code>). Here are some key attributes to remember:</p>
+            <ul>
+              <li><code>border</code> (deprecated): Defines the width of the table's border in pixels. It's recommended to use CSS for border styling as it offers more flexibility.</li>
+              <li><code>cellpadding</code>: Defines the space in pixels between the cell content and its border. This creates padding around the data within the cell.</li>
+              <li><code>cellspacing</code>: Defines the space in pixels between adjacent cells. This controls the spacing between individual cells in the table.</li>
+              <li><code>summary</code>: Provides a brief description of the table's purpose. This is helpful for accessibility, especially for screen readers used by visually impaired users.</li>
+            </ul>
+      </section>
+          <footer>To learn more <a class="footer-link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" target="_blank">click here</a>.</footer>
+    </main>
+ </body>
+</html>

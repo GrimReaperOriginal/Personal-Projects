@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="en">
+ <head>
+   <title id="title"></title>
+    <meta charset= 'UTF-8'>
+    <link rel="stylesheet" href="styles.css">
+ </head>
+  <body>
+    <main id="main-doc">
+      <table id="table_main">
+        <caption>The <code>&lt;table&gt;</code> Element</caption>
+        <thead>
+          <th class="navibar">
+            <nav class="navbar">
+              <header class="special-header">Links </header>
+              <ul class="list_nav">
+                <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+                <li><a href="#Description" class="nav-link">Description</a></li>
+                <li><a href="#Example" class="nav-link">Example</a></li>
+                <li><a href="#Uses" class="nav-link">Uses</a></li>
+                <li><a href="#Commonly_Used_Attributes" class="nav-link">Commonly Used Attributes</a></li>
+              </ul>
+             </nav>
+          </th>
+          <th class="main">
+            <section class="main-section" id="Introduction">
+              <header><h1>Introduction</h1></header>
+              <p class="justify_text">Imagine a spreadsheet - rows and columns filled with information. That's precisely what the <code>&lt;table&gt;</code> element allows you to create in HTML. It establishes a container for organizing your data into a grid layout, making it visually clear and easy to navigate for users.</p>
+            </section>
+            <section class="main-section" id="Description">
+              <header><h1>Description</h1></header>
+              <p class="align-left">The <code>&lt;table&gt;</code> element by itself doesn't hold the actual data. It serves as a framework for other elements that define the structure:</p>
+              <ul>
+                <li>Rows (<code>&lt;tr&gt;</code>): These elements represent horizontal lines within the table. Each <code>&lt;tr&gt;</code> element represents a single row of data.</li>
+                <li>Cells (<code>&lt;td&gt;</code> and <code>&lt;th&gt;</code>): These elements define the individual compartments within a table. They hold the actual content you want to display. There are two main cell types:</li>
+                <ul>
+                  <li>Data Cells (<code>&lt;td&gt;</code>): Used for the main content of the table. They typically display information related to the corresponding row header.</li>
+                  <li>Header Cells (<code>&lt;th&gt;</code>): Used for labeling rows or columns. They are often bolded and visually distinct from regular data cells to improve readability.</li>
+                </ul>
+              </ul>
+            </section>
+            <section class="main-section" id="Example">
+              <header><h1>Example</h1></header>
+              <p>Here's a more comprehensive example of a table with headers, data cells, and proper formatting:</p>
+              <table class="example_table">
+                <thead>
+                  <tr>
+                    <th>Code</th>
+                    <th>Result</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <pre>
+                        &lt;table border="1"&gt;
+                          &lt;thead&gt;
+                            &lt;tr&gt;
+                              &lt;th&gt;Name&lt;/th&gt;
+                              &lt;th&gt;Age&lt;/th&gt;
+                              &lt;th&gt;City&lt;/th&gt;
+                            &lt;/tr&gt;
+                          &lt;/thead&gt;
+                          &lt;tbody&gt;
+                            &lt;tr&gt;
+                              &lt;td&gt;Alice&lt;/td&gt;
+                              &lt;td&gt;30&lt;/td&gt;
+                              &lt;td&gt;New York&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                              &lt;td&gt;Bob&lt;/td&gt;
+                              &lt;td&gt;25&lt;/td&gt;
+                              &lt;td&gt;London&lt;/td&gt;
+                            &lt;/tr&gt;
+                          &lt;/tbody&gt;
+                        &lt;/table&gt;
+                                      </pre>
+                    </td>
+                    <td>
+                      <table border="1">  <thead>  <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>City</th>
+                      </tr>
+                    </thead>
+                    <tbody>  <tr>
+                        <td>Alice</td>
+                        <td>30</td>
+                        <td>New York</td>
+                      </tr>
+                      <tr>
+                        <td>Bob</td>
+                        <td>25</td>
+                        <td>London</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+            <section class="main-section" id="Uses">
+              <header><h1>Uses</h1></header>
+              <p>Tables are incredibly versatile and can be used for various functionalities on web pages:</p>
+              <ul>
+                <li>Data Presentation: The primary use case is presenting data sets in a structured and organized manner. This is ideal for financial records, product listings, comparison charts, or any information that benefits from a grid layout.</li>
+                <li>Layout Purposes: Tables can be used for basic layout structures, especially in older web design practices. You can create sections within a page using tables, although this approach is less common with the emergence of more advanced CSS techniques.</li>
+              </ul>
+            </section>
+            <section class="main-section" id="Commonly_Used_Attributes">
+              <header><h1>Commonly Used Attributes</h1></header>
+              <p>While the <code>&lt;table&gt;</code> element itself has a few attributes, most customization happens with the child elements (<code>&lt;tr&gt;</code> and <code>&lt;td&gt;</code>). Here are some key attributes to remember:</p>
+              <ul>
+                <li><code>border</code> (deprecated): Defines the width of the table's border in pixels. It's recommended to use CSS for border styling as it offers more flexibility.</li>
+                <li><code>cellpadding</code>: Defines the space in pixels between the cell content and its border. This creates padding around the data within the cell.</li>
+                <li><code>cellspacing</code>: Defines the space in pixels between adjacent cells. This controls the spacing between individual cells in the table.</li>
+                <li><code>summary</code>: Provides a brief description of the table's purpose. This is helpful for accessibility, especially for screen readers used by visually impaired users.</li>
+              </ul>
+            </section>
+          </th>
+        </thead>
+      </table>
+      <footer>To learn more <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">click here</a></footer>
+    </main>
+  </body> 
+</html>
